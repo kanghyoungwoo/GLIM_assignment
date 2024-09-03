@@ -1,0 +1,13 @@
+#include <string>
+#include <vector>
+#include<iostream>
+
+using namespace std;
+
+int solution(string my_string, string is_prefix) {
+    int answer = 0;
+    string tmp = my_string.substr(0,is_prefix.length());
+    if(tmp == is_prefix)
+        answer = 1;
+    return answer;
+}
